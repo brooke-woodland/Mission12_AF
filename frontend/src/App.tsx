@@ -332,6 +332,7 @@ return (
 <p>Here is a website listing colleges that participate in the NCAA March Madness playoffs.</p>
 </div>);
 }
+//Team class to determine attributes
 class Team extends React.Component <{school: string; name: string;city: string;state: string;}> {
   render(){
     
@@ -342,11 +343,12 @@ class Team extends React.Component <{school: string; name: string;city: string;s
       <h2>{oneTeam.school}</h2>
       <h3>Mascot: {oneTeam.name}</h3>
       <h3>Location: {oneTeam.city}, {oneTeam.state}</h3>
-      <br></br>
     </div>
     );
   }
 }
+
+// this lists out all the specified attributes of Team objects for every Team object
 
 function TeamList(){
   return (
@@ -355,6 +357,7 @@ function TeamList(){
     </div>
   );
 }
+
 
 function App() {
   return (
